@@ -1,0 +1,75 @@
+<div class="navbar-container" [ngClass]="{ 'hidden': showNavbar }" (window:scroll)="onWindowScroll($event)">
+    <div class="navbar-outer-container">
+
+    </div>
+    <div class="navbar-inner-container">
+        <div class="navbar-branding">
+            <a routerLink="">
+                <img class="navbar-mhl-motors-logo" src="../../../assets/navbar/Logo.svg" />
+            </a>
+        </div>
+        <div class="navbar-menu">
+            <div class="navigation-tab">
+                <div class="nav-btn" mat-button [matMenuTriggerFor]="adsMenu"><span>Ads &#9660;</span></div>
+                <mat-menu #adsMenu="matMenu" class="navbar-submenu">
+                    <div class="navbar-submenu-option">
+                        <span>Cars</span>
+                    </div>
+                    <div class="navbar-submenu-option">
+                        <span>Tires</span>
+                    </div>
+                    <div class="navbar-submenu-option">
+                        <span>Rims</span>
+                    </div>
+                    <div class="navbar-submenu-option">
+                        <span>Wheels</span>
+                    </div>
+                    <div class="navbar-submenu-option">
+                        <span>Parts</span>
+                    </div>
+                    <div class="navbar-submenu-option">
+                        <span>Consumables</span>
+                    </div>
+                    <div class="navbar-submenu-option">
+                        <span>Accessories</span>
+                    </div>
+                </mat-menu>
+            </div>
+            <div class="navigation-tab">
+                <div class="nav-btn" mat-button [matMenuTriggerFor]="servicesMenu"><span>Services &#9660;</span></div>
+                <mat-menu #servicesMenu="matMenu" class="navbar-submenu">
+                    <div class="navbar-submenu-option">
+                        <span>Detailing</span>
+                    </div>
+                    <div class="navbar-submenu-option">
+                        <span>Wrapping</span>
+                    </div>
+                </mat-menu>
+            </div>
+            <div class="navigation-tab">
+                <div class="nav-btn"><span>Technical Specs</span></div>
+            </div>
+            <div class="navigation-tab">
+                <div class="nav-btn"><span>Contact</span></div>
+            </div>
+        </div>
+        <div class="navbar-toolbox">
+            <div class="button-container">
+                <button class="post-an-ad-button">New ad</button>
+            </div>
+            <div class="tool-container">
+                <img class="navbar-icon" src="../../../assets/navbar/messages-logo-white-mhl.svg" />
+            </div>
+            <div class="tool-container">
+                <img class="navbar-icon" src="../../../assets/navbar/favorites-logo-white.svg" />
+            </div>
+            <div class="tool-container">
+                <img class="navbar-icon" src="../../../assets/navbar/profile-logo-white.svg" />
+            </div>
+        </div>
+    </div>
+    <div class="navbar-outer-container">
+
+    </div>
+</div>
+

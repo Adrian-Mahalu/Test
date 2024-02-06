@@ -1,0 +1,48 @@
+// .container {
+//     width: 100vw;
+//     height: 100%;
+
+//     display: flex;
+//     flex-direction: column;
+//     align-content: center;
+//     justify-content: center;
+//     flex-wrap: wrap;
+    
+//     gap: 50px;
+// }
+
+// app-navbar {
+//     width: 100%;
+// }
+
+// app-navbar3 {
+//     width: 100vw;
+// }
+
+// app-footer {
+//     width: 100%;
+// }
+
+
+.container {
+    width: 100%;
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+    //overflow: hidden; /* Prevent any overflow content from showing */
+    display: flex; /* Make the content flex to occupy the full height */
+    flex-direction: column; /* Stack children vertically */
+
+    gap: 10px;
+  }
+  
+  /* Style your navbar and footer as needed */
+  app-navbar {
+    width: 100%;
+    /* Add styles for your navbar */
+  }
+  
+  app-footer {
+    width: 100%;
+    /* Add styles for your footer */
+  }

@@ -1,0 +1,347 @@
+.navbar-container {
+    width: 100vw;
+    height: 65px;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+
+    background-color: var(--mhl-dark-grey-color);
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-branding,
+.navbar-toolbox {
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.displayFlex {
+    display: flex !important;
+}
+
+.profile-options-menu {
+    top: 65px;
+    width: 10%;
+
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+
+    background-color: var(--mhl-dark-grey-color);
+
+    border-radius: 7px;
+
+    div {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    div:hover {
+        border-radius: 7px;
+        background-color: #7FC4F2;
+
+        span{
+            color: var(--mhl-dark-grey-color) !important;
+        }
+    }
+
+    span{
+        color:  #d9d9d9 !important;
+        align-self: center;
+    }
+
+    hr {
+        margin-top: 0;
+        margin-bottom: 0;
+        cursor: default;
+    }
+}
+
+.tile-container {
+    width: 20%;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+
+    position: relative;
+}
+
+.post-an-ad-tile-container {
+    width: 20%;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.post-an-ad-button {
+    width: 100%;
+    height: 25px;
+
+    border: 0px;
+    border-radius: 15px;
+    font-family: "Lato-Regular";
+    font-weight: 600;
+    font-size: 1.4rem;
+
+    color: var(--mhl-dark-grey-color);
+    background-color: #d9d9d9;
+}
+
+.post-an-ad-button:hover{
+    background-color: #7FC4F2;
+}
+
+a {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navbar-mhl-logo {
+    width: 200px;
+}
+
+.navbar-icon {
+    width: 40px;
+}
+
+span {
+    color: #f0f2f5;
+    font-family: "Lato-Regular";
+    font-weight: 300;
+    font-size: 22px;
+    align-self: center;
+}
+
+
+.tile-container:hover  {
+    .navbar-icon{
+        filter: brightness(0) saturate(100%) invert(70%) sepia(22%) saturate(786%) hue-rotate(165deg) brightness(102%) contrast(90%);
+    }
+    
+    span {
+        color: #7FC4F2;
+    }
+}
+
+.navbar-mhl-logo:hover {
+    filter: brightness(0) saturate(100%) invert(70%) sepia(22%) saturate(786%) hue-rotate(165deg) brightness(102%) contrast(90%);
+}
+
+// --------------------------
+/* xxs */
+@media (min-width: 100px) {
+}
+/* xs */
+@media (min-width: 475px) {
+}
+/* sm */
+@media (min-width: 640px) {
+}
+/* md */
+@media (min-width: 768px) {
+}
+/* lg */
+@media (min-width: 1024px) {
+}
+/* xl */
+@media (min-width: 1280px) {
+}
+/* 2xl */
+@media (min-width: 1536px) {
+}
+/* 3xl */
+@media (min-width: 1920px) {
+}
+// ---------------------------
+
+// COMMON
+@media  (min-width: 100px),
+        (min-width: 475px),
+        (min-width: 100px),
+        (min-width: 640px),
+        (min-width: 768px),
+        (min-width: 1024px) {
+            span {
+                display: none;
+            }
+        }
+
+@media  (min-width: 1280px),
+        (min-width: 1381px),
+        (min-width: 1536px),
+        (min-width: 1920px)
+        {
+            span {
+                display: flex;
+            }
+        }   
+// --COMMON
+
+@media (min-width: 100px) {
+    .navbar-mhl-logo {
+        width: 150px;
+    }
+
+    .post-an-ad-button {
+        font-size: 6px;
+    }
+
+    .navbar-icon {
+        width: 20px;
+    }
+
+    .navbar-mhl-logo {
+        width: 180px;
+    }
+}
+
+@media (min-width: 475px) {
+    .navbar-branding {
+        width: 60%;
+    }
+
+    .navbar-toolbox {
+        width: 40%;
+    }
+
+    .navbar-mhl-logo {
+        width: 200px;
+    }
+
+    .navbar-icon {
+        width: 30px;
+    }
+}
+
+@media (min-width: 640px) {
+    .post-an-ad-button {
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 768px){
+    .navbar-branding {
+        width: 60%;
+    }
+
+    .navbar-toolbox {
+        width: 40%;
+    }
+
+    .post-an-ad-button {
+        height: 30px;
+        font-size: 12px;
+    }
+}
+
+@media(max-width:1023px){
+    .profile-options-menu {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1024px){
+    .navbar-branding {
+        width: 40%;
+    }
+
+    .navbar-toolbox {
+        width: 60%;
+    }
+
+    .tile-container{
+        gap: 3%;
+    }
+
+    .post-an-ad-button {
+        width: 80%;
+        font-size: 14px;
+    }
+
+    span {
+        display: flex;
+        font-size: 17px;
+    }
+
+    .profile-options-menu {
+        display: none;
+    }
+}
+
+@media (min-width: 1280px){
+    .navbar-branding {
+        width: 40%;
+    }
+
+    .navbar-toolbox {
+        width: 60%;
+    }
+}
+
+@media (min-width: 1381px) {
+    .navbar-branding {
+        width: 45%;
+    }
+
+    .navbar-toolbox {
+        width: 55%;
+    }
+
+
+}
+
+@media (min-width: 1536px) {
+    .navbar-branding {
+        width: 50%;
+    }
+
+    .navbar-toolbox {
+        width: 50%;
+    }
+
+    span {
+        align-self: center;
+    }
+}
+
+@media (min-width: 1920px) {
+    .navbar-branding {
+        width: 55%;
+    }
+
+    .navbar-toolbox {
+        width: 45%;
+    }
+    .post-an-ad-button {
+        width: 60%;
+        font-size: 16px;
+    }
+
+    span {
+        display: flex;
+        font-size: 24px;
+        align-self: flex-start;
+    }
+}

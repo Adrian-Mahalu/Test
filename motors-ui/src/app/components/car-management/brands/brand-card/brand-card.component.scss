@@ -1,0 +1,55 @@
+.car-brand-card {
+    width: 150px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    border-radius: 7px 7px 7px 7px;
+    background-color: #f0f2f5;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.car-brand-logo-container {
+    img {
+        width: 90%;
+        height: 90%;
+    }
+
+    width: 100%;
+    height: 75%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.car-brand-name-container {
+    width: 100%;
+    height: 25%;
+
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.car-brand-name-text {
+    font-family: "Lato-Regular";
+    font-weight: 300;
+    font-size: 20px;
+    color: #222a3e;
+}
+
+
+.car-brand-card:hover{
+    background-color: var(--mhl-dark-grey-color);
+    
+    span{
+        color: #7fc4f2;
+    }
+}

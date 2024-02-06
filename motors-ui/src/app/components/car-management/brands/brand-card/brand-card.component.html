@@ -1,0 +1,12 @@
+<a routerLink="Models/{{brand.brandName}}">
+<div class="car-brand-card"
+            (mouseenter)="onBrandCardContainerHover(true)"
+            (mouseleave)="onBrandCardContainerHover(false)">
+        <div class="car-brand-logo-container">
+            <img id="brand-logo" [src]="brand.logoPath" />
+        </div>
+        <div class="car-brand-name-container">
+            <span class="car-brand-name-text">{{brand.brandName}}</span>
+        </div>
+    </div>
+</a>

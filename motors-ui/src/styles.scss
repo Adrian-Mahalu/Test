@@ -1,0 +1,41 @@
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import '../src/assets/css/global-variables.css';
+
+@font-face {
+    font-family: 'Lato-Regular';
+    src: url('../src/assets/fonts/Lato/Lato-Regular.ttf');
+}
+
+html
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+a {
+    text-decoration: none !important;
+    color: #222a3e !important;
+  }
+
+.ce-small-icon {
+    width: 3vw;
+    height: 3vh;
+}
+
+.ce-green-color {
+  color: #008800 !important;
+}
+
+.ce-red-color {
+  color: #e20000 !important;
+}
+
+.ce-green-background {
+  background-color: #008800 !important;
+}
+
+.ce-red-background {
+  background-color: #e20000 !important;
+}
+

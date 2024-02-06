@@ -1,0 +1,68 @@
+<a routerLink="Engines/{{generation.generationName}}">
+    <div class="generation-card">
+        <div class="vertical-bar-container">
+            <div class="vertical-bar" [ngClass]="getVerticalBarColorClassByEndOfProduction(generation.endOfProduction)"></div>
+        </div>
+        <div class="photo-container">
+            <img src="{{generation.logoPath}}" />
+        </div>
+        <div class="details-container">
+            <div class="title-container">
+                <span>{{generation.brandName}} {{generation.generationName}}</span>
+            </div>
+            <div class="detail-row-container">
+
+            </div>
+            <div class="detail-row-container">
+                <img class="ce-small-icon" src="../../../../../assets/ads/calendar-logo.svg" />
+                <div class="span-data-container">
+                    <span
+                        [ngClass]="getProductionTextColorClassByEndOfProduction(generation.endOfProduction)">{{generation.startOfProduction}}
+                        - {{generation.endOfProduction}}</span>
+                </div>
+                <div class="separator-container">
+                    <span><b>|</b></span>
+                </div>
+                <img class="ce-small-icon" src="../../../../../assets/ads/body-type-logo.svg" />
+                <div class="span-data-container">
+                    <span><b>{{generation.bodyType}}</b></span>
+                </div>
+            </div>
+            <div class="detail-row-container">
+                <div [ngSwitch]="generation.fuelType">
+                    <div *ngSwitchCase="Fuel">
+                        <img class="ce-small-icon" src="../../../../../assets/ads/gas-station-logo.svg">
+                    </div>
+                    <div *ngSwitchCase="Electricity">
+                        <img class="ce-small-icon" src="../../../../../assets/ads/lightning-logo.svg" />
+                    </div>
+                    <div *ngSwitchCase="Hybrid">
+                        <img class="ce-small-icon" src="../../../../../assets/ads/hybrid-logo.svg" />
+                    </div>
+                    <div *ngSwitchCase="Hydrogen">
+                        <img class="ce-small-icon" src="../../../../../assets/ads/hydrogen-logo.svg" />
+                    </div>
+                    <div *ngSwitchDefault>
+                        <img class="ce-small-icon" src="../../../../../assets/ads/gas-station-logo.svg">
+                    </div>
+                </div>
+                <div class="span-data-container">
+                    <span>{{generation.fuelType}}</span>
+                </div>
+                <div class="separator-container">
+                    <span><b>|</b></span>
+                </div>
+                <img class="ce-small-icon" src="../../../../../assets/ads/cloud-logo.svg" />
+                <div class="span-data-container">
+                    <span>{{generation.emissionStandard}}</span>
+                </div>
+            </div>
+            <div class="detail-row-container">
+                <img class="ce-small-icon" src="../../../../../assets/ads/horsepower-logo.svg" />
+                <div class="span-data-container">
+                    <span>From {{generation.minHorsePower}} HP to {{generation.maxHorsePower}} HP</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</a>

@@ -1,0 +1,54 @@
+<div class="navbar-container" [ngClass]="{ 'hidden': showNavbar }" (window:scroll)="onWindowScroll($event)">
+    <div class="navbar-branding">
+        <div class="navbar-logo-container">
+            <a routerLink="">
+                <img class="navbar-mhl-logo" src="../../../assets/navbar/Logo.svg" />
+            </a>
+        </div>
+    </div>
+    <div class="navbar-toolbox">
+        <div class="tile-container">
+            <img class="navbar-icon" src="../../../assets/navbar/messages-logo-white-mhl.svg" />
+            <span>Messages</span>
+        </div>
+        <div class="tile-container">
+            <img class="navbar-icon" src="../../../assets/navbar/favorites-logo-white.svg" />
+            <span>Favorites</span>
+        </div>
+        <div class="tile-container" (mouseenter)="showProfileOptionsMenu()">
+            <img class="navbar-icon" src="../../../assets/navbar/profile-logo-white.svg" />
+            <span>My account</span>
+            <div class="profile-options-menu" [ngClass]="{ 'displayFlex': showProfileOptions}" (mouseleave)="hideProfileOptionsMenu()">
+                <div>
+                    <span>My ads</span>
+                </div>
+                <div>
+                    <span>My orders</span>
+                </div>
+                <div>
+                    <span>Messages</span>
+                </div>
+                <div>
+                    <span>Settings</span>
+                </div>
+                <div>
+                    <span>Profile</span>
+                </div>
+                <div>
+                    <span>Favorites</span>
+                </div>
+                    <hr style="width: 95%;"/>
+                <div>
+                    <span>Log out</span>
+                </div>
+            </div>
+        </div>
+        <div class="post-an-ad-tile-container">
+            <button class="post-an-ad-button">New ad</button>
+        </div>
+        <div class="tile-container">
+            <img class="navbar-icon" src="../../../assets/navbar/cart-logo-white.svg" />
+            <span>My cart</span>
+        </div>
+    </div>
+</div>

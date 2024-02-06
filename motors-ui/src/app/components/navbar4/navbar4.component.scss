@@ -1,0 +1,86 @@
+.navbar-container {
+    width: 100vw;
+    height: 55px;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+
+    background-color: var(--mhl-dark-grey-color);
+}
+
+.navbar-branding {
+    width: 50%;
+    height: 55px;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.navbar-logo-container {
+    width: 50%;
+    left: auto;
+    right: auto;
+}
+
+.navbar-toolbox {
+    width: max(200px, 50%);
+    height: 55px;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.tile-container {
+    width: 20%;
+    height: 55px;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+a {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navbar-mhl-logo {
+    width: 200px;
+}
+
+.navbar-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.post-an-ad-button {
+    width: 60%;
+    height: 30px;
+
+    border: 0px;
+    border-radius: 15px;
+    font-family: "Calibri";
+    font-weight: 600;
+    font-size: 100%;
+
+    color: var(--mhl-dark-grey-color);
+    background-color: var(--mhl-dirty-white-color);
+}
+
+span {
+    color: #f0f2f5;
+    font-family: "Calibri";
+    font-weight: 300;
+    font-size: 22px;
+    align-self: center;
+}

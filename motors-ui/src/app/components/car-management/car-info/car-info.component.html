@@ -1,0 +1,615 @@
+<div class="app">
+    <div class="something">
+
+    </div>
+    <div class="container">
+        <!-- <div *ngIf="car"> -->
+        <div class="car-info-card">
+            <div class="specs-title-container">
+                <span class="navy-color">General information</span>
+            </div>
+            <div class="car-info-details">
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Brand</span>
+                    </div>
+                    <div>
+                        <span>{{car.brandName}}</span>
+                    </div>
+
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Model</span>
+                    </div>
+                    <div>
+                        <span>{{car.modelName}}</span>
+                    </div>
+
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Generation</span>
+                    </div>
+                    <div>
+                        <span>{{car.generationName}}</span>
+                    </div>
+
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Engine</span>
+                    </div>
+                    <div>
+                        <span>{{car.engineName}}</span>
+                    </div>
+
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Start of production</span>
+                    </div>
+                    <div>
+                        <span>{{car.startOfProduction}}</span>
+                    </div>
+
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>End of production</span>
+                    </div>
+                    <div>
+                        <span>{{car.endOfProduction}}</span>
+                    </div>
+
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Powertrain Architecture</span>
+                    </div>
+                    <div>
+                        <span>{{car.powertrainArchitecture}}</span>
+                    </div>
+
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Body type</span>
+                    </div>
+                    <div>
+                        <span>{{car.bodyType}}</span>
+                    </div>
+
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Seats</span>
+                    </div>
+                    <div>
+                        <span>{{car.seats}}</span>
+                    </div>
+
+                </div>
+                <div class="car-info-details-pair last-item-from-section">
+                    <div>
+                        <span>Doors</span>
+                    </div>
+                    <div>
+                        <span>{{car.doors}}</span>
+                    </div>
+
+                </div>
+            </div>
+            <!-- ------------------------------------------------------------------------------------  -->
+            <div class="specs-title-container">
+                <span class="navy-color">Performance specs</span>
+            </div>
+            <div class="car-info-details">
+
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Fuel economy - Urban</span>
+                    </div>
+                    <div>
+                        <span>{{car.fuelEconomyUrban}}</span>
+                    </div>
+
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Fuel economy - Extra urban</span>
+                    </div>
+                    <div>
+                        <span>{{car.fuelEconomyExtraUrban}}</span>
+                    </div>
+
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Fuel economy - Combined</span>
+                    </div>
+                    <div>
+                        <span>{{car.fuelEconomyCombined}}</span>
+                    </div>
+
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Fuel Type</span>
+                    </div>
+                    <div>
+                        <span>{{car.fuelType}}</span>
+                    </div>
+
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Acceleration 0 - 100 km/h</span>
+                    </div>
+                    <div>
+                        <span>{{car.acceleration0To100KmH}}</span>
+                    </div>
+
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Acceleration 0 - 62 mph</span>
+                    </div>
+                    <div>
+                        <span>{{car.acceleration0To62MpH}}</span>
+                    </div>
+
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Maximum speed</span>
+                    </div>
+                    <div>
+                        <span>{{car.maximumSpeed}}</span>
+                    </div>
+
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Emission standard</span>
+                    </div>
+                    <div>
+                        <span>{{car.emissionStandard}}</span>
+                    </div>
+
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Weight-to-power ratio</span>
+                    </div>
+                    <div>
+                        <span>{{car.weightToPowerRatio}}</span>
+                    </div>
+
+                </div>
+                <div class="car-info-details-pair last-item-from-section">
+                    <div>
+                        <span>Weight-to-torque ratio</span>
+                    </div>
+                    <div>
+                        <span>{{car.weightToTorqueRatio}}</span>
+                    </div>
+
+                </div>
+            </div>
+            <!-- -------------------------------------------------------------------------------  -->
+            <div class="specs-title-container">
+                <span class="navy-color">Engine specs</span>
+            </div>
+            <div class="car-info-details">
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Power</span>
+                    </div>
+                    <div>
+                        <span>{{car.power}}</span>
+                    </div>
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Power per litre</span>
+                    </div>
+                    <div>
+                        <span>{{car.powerPerLitre}}</span>
+                    </div>
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Torque</span>
+                    </div>
+                    <div>
+                        <span>{{car.torque}}</span>
+                    </div>
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Engine layout</span>
+                    </div>
+                    <div>
+                        <span>{{car.engineLayout}}</span>
+                    </div>
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Engine Model/Code</span>
+                    </div>
+                    <div>
+                        <span>{{car.engineModelCode}}</span>
+                    </div>
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Engine displacement</span>
+                    </div>
+                    <div>
+                        <span>{{car.engineVolume}}</span>
+                    </div>
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Number of cylinders</span>
+                    </div>
+                    <div>
+                        <span>{{car.numberOfCylinders}}</span>
+                    </div>
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Engine configuration</span>
+                    </div>
+                    <div>
+                        <span>{{car.engineConfiguration}}</span>
+                    </div>
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Cylinder Bore</span>
+                    </div>
+                    <div>
+                        <span>{{car.cylinderBore}}</span>
+                    </div>
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Piston Stroke</span>
+                    </div>
+                    <div>
+                        <span>{{car.pistonStroke}}</span>
+                    </div>
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Compression ratio</span>
+                    </div>
+                    <div>
+                        <span>{{car.compressionRatio}}</span>
+                    </div>
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Number of valves per cylinder</span>
+                    </div>
+                    <div>
+                        <span>{{car.numberOfValvesPerCylinder}}</span>
+                    </div>
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Fuel injection system</span>
+                    </div>
+                    <div>
+                        <span>{{car.fuelInjectionSystem}}</span>
+                    </div>
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Engine aspiration</span>
+                    </div>
+                    <div>
+                        <span>{{car.engineAspiration}}</span>
+                    </div>
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Engine oil capacity</span>
+                    </div>
+                    <div>
+                        <span>{{car.engineOilCapacity}}</span>
+                    </div>
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Coolant</span>
+                    </div>
+                    <div>
+                        <span>{{car.coolant}}</span>
+                    </div>
+                </div>
+                <div class="car-info-details-pair last-item-from-section">
+                    <div>
+                        <span>Engine systems</span>
+                    </div>
+                    <div>
+                        <span>{{car.engineSystems}}</span>
+                    </div>
+    
+                </div>
+            </div>
+            <!-- ------------------------------------------------------------------------------- -->
+            <div class="specs-title-container">
+                <span class="navy-color">Space, Volume and Weights</span>
+            </div>
+            <div class="car-info-details">
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Kerb Weight</span>
+                    </div>
+                    <div>
+                        <span>{{car.kerbWeight}}</span>
+                    </div>
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Max. weight</span>
+                    </div>
+                    <div>
+                        <span>{{car.maximumWeight}}</span>
+                    </div>
+
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Max load</span>
+                    </div>
+                    <div>
+                        <span>{{car.maximumLoad}}</span>
+                    </div>
+
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Trunk space</span>
+                    </div>
+                    <div>
+                        <span>{{car.maximumLoad}}</span>
+                    </div>
+
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Fuel tank capacity</span>
+                    </div>
+                    <div>
+                        <span>{{car.fuelTankCapacity}}</span>
+                    </div>
+
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Max. roof load</span>
+                    </div>
+                    <div>
+                        <span>{{car.maximumRoofLoad}}</span>
+                    </div>
+
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Permitted trailer load with brakes (12%)</span>
+                    </div>
+                    <div>
+                        <span>{{car.permittedTrailerLoadWithBrakes}}</span>
+                    </div>
+
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Permitted trailer load without brakes</span>
+                    </div>
+                    <div>
+                        <span>{{car.permittedTrailerLoadWithoutBreaks}}</span>
+                    </div>
+
+                </div>
+                <div class="car-info-details-pair last-item-from-section">
+                    <div>
+                        <span>Permitted towbar download</span>
+                    </div>
+                    <div>
+                        <span>{{car.permittedTowBarDownload}}</span>
+                    </div>
+
+                </div>
+            </div>
+            <!-- ----------------------------------------------------------------------------------- -->
+            <div class="specs-title-container">
+                <span class="navy-color">Dimensions</span>
+            </div>
+            <div class="car-info-details">
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Length</span>
+                    </div>
+                    <div>
+                        <span>{{car.length}}</span>
+                    </div>
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Width</span>
+                    </div>
+                    <div>
+                        <span>{{car.width}}</span>
+                    </div>
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Height</span>
+                    </div>
+                    <div>
+                        <span>{{car.height}}</span>
+                    </div>
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Wheelbase</span>
+                    </div>
+                    <div>
+                        <span>{{car.wheelbase}}</span>
+                    </div>
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Front track</span>
+                    </div>
+                    <div>
+                        <span>{{car.frontTrack}}</span>
+                    </div>
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Rear (Back) track</span>
+                    </div>
+                    <div>
+                        <span>{{car.rearTrack}}</span>
+                    </div>
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Ride height (ground clearance)</span>
+                    </div>
+                    <div>
+                        <span>{{car.rideHeight}}</span>
+                    </div>
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Drag coefficient (Cd)</span>
+                    </div>
+                    <div>
+                        <span>{{car.dragCoefficient}}</span>
+                    </div>
+                </div>
+                <div class="car-info-details-pair last-item-from-section">
+                    <div>
+                        <span>Minimum turning circle (turning diameter)</span><span>{{car.turningDiameter}}</span>
+                    </div>
+                    <div>
+                        <span>{{car.turningDiameter}}</span>
+                    </div>
+                </div>
+            </div>
+            <!-- ---------------------------------------------------------- -->
+            <div class="specs-title-container">
+                <span class="navy-color">Drivetrain, Brakes and Suspension Specs</span>
+            </div>
+            <div class="car-info-details">
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Drive train architecture</span>
+                    </div>
+                    <div>
+                        <span>{{car.driveTrainArchitecture}}</span>
+                    </div>
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Drive wheel</span>
+                    </div>
+                    <div>
+                        <span>{{car.driveWheel}}</span>
+                    </div>
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Number of gears and type of gearbox</span>
+                    </div>
+                    <div>
+                        <span>{{car.typeOfGearbox}}</span>
+                    </div>
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Front suspension</span>
+                    </div>
+                    <div>
+                        <span>{{car.frontSuspension}}</span>
+                    </div>
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Rear suspension</span>
+                    </div>
+                    <div>
+                        <span>{{car.rearSuspension}}</span>
+                    </div>
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Front brakes</span>
+                    </div>
+                    <div>
+                        <span>{{car.frontBrakes}}</span>
+                    </div>
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Rear brakes</span>
+                    </div>
+                    <div>
+                        <span>{{car.rearBrakes}}</span>
+                    </div>
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Assisting systems</span>
+                    </div>
+                    <div>
+                        <span>{{car.assistingSystems}}</span>
+                    </div>
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Steering type</span>
+                    </div>
+                    <div>
+                        <span>{{car.steeringType}}</span>
+                    </div>
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Power steering</span>
+                    </div>
+                    <div>
+                        <span>to modify</span>
+                    </div>
+                </div>
+                <div class="car-info-details-pair">
+                    <div>
+                        <span>Tires size</span>
+                    </div>
+                    <div>
+                        <span>{{car.tiresSize}}</span>
+                    </div>
+                </div>
+                <div class="car-info-details-pair last-item-from-section">
+                    <div>
+                        <span>Wheel rims size</span>
+                    </div>
+                    <div>
+                        <span>{{car.wheelRimsSize}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- </div> -->
+    </div>
+    <div class="something-else">
+
+    </div>
+</div>

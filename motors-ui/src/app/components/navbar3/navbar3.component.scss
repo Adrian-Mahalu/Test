@@ -1,0 +1,167 @@
+* {
+    font-family: var(--calibri);
+}
+
+.navbar-container {
+    width: 100%;
+    height: 55px;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+
+    background-color: var(--mhl-dark-grey-color);
+    transition: transform 0.3s ease-in-out;
+
+    .navbar-inner-container {
+        width: 60%;
+        height: 55px;
+
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    .navbar-outer-container {
+        width: 20%;
+        height: inherit;
+    }
+}
+
+.navbar-branding {
+    flex: 1;
+
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+
+    .navbar-mhl-motors-logo {
+        width: 140px;
+        height: 100%;
+    }
+}
+
+.navbar-menu {
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+
+    .navigation-tab {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+
+        cursor: pointer;
+    }
+}
+
+.navbar-toolbox {
+    flex: 1;
+
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.tool-container {
+    width: 15%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.button-container {
+    width: 55%;
+    height: 55px;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.navbar-icon {
+    width: 25px;
+    height: 25px;
+
+    cursor: pointer;
+}
+
+.nav-btn {
+    width: 100%;
+    height: 55px;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+
+    color: var(--mhl-dirty-white-color);
+    cursor: pointer;
+}
+
+.nav-btn:hover {
+    span {
+        color: var(--mhl-blue-color);
+    }
+}
+
+.navbar-submenu {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    background-color: var(--mhl-dark-grey-color) !important;
+
+    span {
+        color: var(--mhl-dirty-white-color);
+    }
+
+    .navbar-submenu-option {
+        width: 100px;
+        height: 35px;
+
+        display: flex;
+        justify-content: flex-start;
+
+        cursor: pointer;
+    }
+
+    .navbar-submenu-option:hover {
+        span {
+            color: var(--mhl-blue-color);
+        }
+    }
+}
+
+.post-an-ad-button {
+    width: 60%;
+    height: 60%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--mhl-dark-grey-color);
+    border-radius: 5px;
+    background-color: var(--mhl-dirty-white-color);
+    color: var(--mhl-dark-grey-color);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+
+    transition:
+        background-color 0.3s,
+        color 0.3s;
+}
+
+.post-an-ad-button:hover {
+    background-color: var(--mhl-blue-color);
+}
